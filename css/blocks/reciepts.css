@@ -1,0 +1,77 @@
+.reciepts {
+    padding-top: 150px;
+    margin-bottom: 60px;
+}
+
+.reciepts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 32px;
+    column-gap: 19px;
+    justify-content: center;
+}
+
+.reciepts-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reciepts-card__name {
+    font-size: 40px;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.first {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.second {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Ужин */
+.third {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.xl {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .reciepts-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xl {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .reciepts-card__name {
+        font-size: 28px;
+    }
+
+    .reciepts-card__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .reciepts {
+        padding-top: 40px;
+    }
+
+    .reciepts-card__name {
+        font-size: 18px;
+    }
+}

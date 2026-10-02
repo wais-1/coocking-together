@@ -1,0 +1,45 @@
+.for-dish {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 50px;
+}
+
+.for-dish__name {
+    margin: 0 0 50px;
+    font-size: 35px;
+    letter-spacing: -0.02em;
+}
+
+.for-dish__inner {
+    font-size: 36px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.for-dish__inner::before {
+    content: "";
+    background-color: #000000;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+}
+
+@media (max-width: 1023px) {
+    .for-dish__inner {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .for-dish__name {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .for-dish__inner {
+        font-size: 16px;
+    }
+}

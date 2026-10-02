@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Готовим вместе</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <picture>
+                    <img src="images/img-logo.png" srcset="images/img-logo@2x.png 2x" alt="логотип"
+                        class="header-wrapper__logo" width="690" height="463">
+                </picture>
+                <picture>
+                    <img src="images/header-dish.png" srcset="images/header-dish@2x.png 2x" alt="тарелка с салатом"
+                        class="header-wrapper__img" width="393" height="480">
+                </picture>
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="index.html" class="nav-list__link">Главная</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="about.html" class="nav-list__link">О нас</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#reciepts" class="nav-list__link">Рецепты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="reciepts" id="reciepts">
+            <div class="container">
+                <h1 class="visually-hidden">Вкусные рецеаты "Готовим вместе"</h1>
+                <div class="reciepts-wrapper">
+                    <a href="breakfest.html" class="reciepts-card first">
+                        <span class="reciepts-card__name">Завтрак</span>
+                        <picture>
+                            <img src="images/img-breakfest.png" srcset="images/img-breakfest@2x.png 2x"
+                                alt="картинка завтрака" class="reciepts-card__img" width="440" height="303">
+                        </picture>
+                    </a>
+                    <a href="lunch.html" class="reciepts-card second">
+                        <span class="reciepts-card__name">Обед</span>
+                        <picture>
+                            <img src="images/img-lunch.png" srcset="images/img-lunch@2x.png 2x" alt="картинка обеда"
+                                class="reciepts-card__img" width="440" height="303">
+                        </picture>
+                    </a>
+                    <a href="dinner.html" class="reciepts-card third">
+                        <span class="reciepts-card__name">Ужин</span>
+                        <picture>
+                            <img src="images/img-dinner.png" srcset="images/img-dinner@2x.png 2x" alt="картинка ужина"
+                                class="reciepts-card__img" width="440" height="303">
+                        </picture>
+                    </a>
+                    <a href="best.html" class="reciepts-card xl">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/img-best-mobile.png">
+                            <source media="(min-width: 768px)" srcset="images/img-best-tablet.png">
+                            <img src="images/img-best.png" srcset="images/img-best@2x.png 2x"
+                                alt="картинка лучших рецептов" class="reciepts-card__img" width="1384" height="439">
+                        </picture>
+                        <span class="reciepts-card__name">Ваши лучшие рецепты</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-inner">
+                    <span class="footer-inner__name">О нас</span>
+                    <a href="#" class="footer-inner__text">Блог</a>
+                    <a href="#" class="footer-inner__text">Отзывы</a>
+                </div>
+                <div class="footer-inner">
+                    <span class="footer-inner__name">Контакты</span>
+                    <a href="tel:+79934768902" class="footer-inner__text">+7 (993) 476-89-02</a>
+                    <div class="footer-inner__mail">
+                        <span class="footer-inner__text">Gmail:</span>
+                        <a href="mailto:cookingtogether98@gmail.com"
+                            class="footer-inner__text">cookingtogether98@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="footer-agreement">Пользовательское соглашение</a>
+        </div>
+    </footer>
+</body>
+
+</html>
